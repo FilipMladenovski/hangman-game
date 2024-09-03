@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Raleway:wght@300&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #f5f5f5;
+  background: linear-gradient(135deg, #1e1e1e, #2b2b2b);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  background-color: #333;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid #555;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ff6b6b;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+h4 {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+  color: #dcdcdc;
+  font-weight: 400;
+}
+
+#keyList button {
+  padding: 15px 20px;
+  background: #444;
+  border: 2px solid #555;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: #f5f5f5;
+  margin: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#keyList button:hover {
+  background: #555;
+  transform: translateY(-3px);
+}
+
+#selectedCat {
+  margin: 30px 0;
+  font-size: 1.6rem;
+  color: #f0f0f0;
+  letter-spacing: 2px;
+}
+
+#selectedLat {
+  font-size: 2.3rem;
+  letter-spacing: 10px;
+  margin-bottom: 25px;
+  color: #f5f5f5;
+}
+
+span {
+  margin-left: 10px;
+}
+
+#clue {
+  width: 200px;
+  padding: 15px;
+  background-color: #f06595;
+  border: 2px solid #ff6b6b;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#clue:hover {
+  background-color: #ff6b6b;
+  transform: translateY(-3px);
+}
+
+#lives, #hint {
+  font-size: 1.2rem;
+  color: #dcdcdc;
+  margin: 20px 0;
+}
+
+#hangman {
+  margin-top: 25px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border: 2px solid #555;
+}
+
+.selectedWord {
+  background-color: #555;
+  cursor: not-allowed;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h4, #selectedCat, #lives, #hint {
+    font-size: 1rem;
+  }
+
+  #selectedLat {
+    font-size: 1.8rem;
+  }
+
+  #keyList button {
+    font-size: 1rem;
+    padding: 12px 16px;
+  }
+
+  #clue {
+    width: 160px;
+    font-size: 1rem;
+  }
+}
